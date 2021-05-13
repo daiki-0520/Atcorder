@@ -3,6 +3,7 @@
 #define rep(i, m, n) for(int i = m; i < n; i++)
 #define inf 2e9
 #define all(v) v.begin(), v.end()
+#define fore(i,a) for(auto &i:a)
 template<class T>bool chmax(T &a, const T &b) { if (a<b) { a=b; return 1; } return 0; }
 template<class T>bool chmin(T &a, const T &b) { if (b<a) { a=b; return 1; } return 0; }
 using namespace std;

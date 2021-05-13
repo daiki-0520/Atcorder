@@ -11,13 +11,14 @@ typedef long long ll;
 int main(){
     int ans = inf;
     int N;
-    int A[1010101010],P[1010101010],X[1010101010];
+    int A[101010],P[101010],X[101010];
     cin >> N;
     rep(i,0,N) cin >> A[i] >> P[i] >> X[i];
     rep(i,0,N){
         if(A[i]<X[i]){
             chmin(ans,P[i]);
         } 
+    }
     if(ans == inf) ans=-1;
     cout << ans << endl;
     return 0;
