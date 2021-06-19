@@ -1,13 +1,13 @@
 N = int(input())
-a = list(map(int, input().split()))
-
-result = 0
-for i in range(2 , 1000):
-    t = 0
-    for x in a:
-        if x % i == 0:
-            t += 1
-    result = max(result, t)
-
-print(result)
-
+A = list(map(int, input().split()))
+ 
+ans = -1
+mx = 0
+ 
+for x in range(2, 1001):
+	s = sum(a % x == 0 for a in A)
+	if mx < s:
+		mx = s
+		ans = x
+ 
+print(ans)
